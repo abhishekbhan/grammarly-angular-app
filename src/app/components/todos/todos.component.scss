@@ -1,0 +1,38 @@
+.todos {
+    // display: flex;
+    // flex-direction: column;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    .todo {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 1rem;
+        border-bottom: 1px solid gray;
+
+        .complete {
+            border: none;
+            background-color: rgb(48, 102, 146);
+            padding: 8px 12px;
+            color: white;
+            align-self: center;
+        }
+
+        .todo-id,
+        .todo-title {
+            align-self: center;
+        }
+
+        .todo-title {
+            cursor: pointer;
+        }
+
+        &.done {
+            .todo-title {
+                text-decoration: line-through;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #24252A;
+    margin-bottom: 2rem;
+
+    h3 {
+        color: #32B491;
+    }
+
+    .header-link-list {
+        display: flex;
+        flex-grow: 1;
+
+        .header-link {
+            list-style: none;
+            margin-left: 1rem;
+            cursor: pointer;
+            & a {
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                &:visited {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #24252A;
+    color: white;
+}
+
+.app-container {
+    max-width: 90%;
+    padding: 0 2rem;
+    margin: 0 auto;
+}

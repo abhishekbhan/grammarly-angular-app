@@ -1,0 +1,8 @@
+<div class="app-gif-search-container">
+  <form>
+    <input type="text" class="gif-search" name='gif' #inputGif
+    (ngModelChange)="fetchGifsOnChange($event)"
+    [(ngModel)]="keyword" placeholder="Type your gif name...">
+    <button class="gif-submit" type="submit" (click)="fetchGifs()">Fetch</button>
+  </form>
+</div>

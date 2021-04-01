@@ -1,0 +1,22 @@
+//CSS can be improved
+
+.gif-display-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .gif-container {
+        width: 25%;
+
+        .img-container {
+            height: 300px;
+        }
+
+        .img {
+            width: 100%;
+            max-height: 100%;
+        }
+    }
+}
